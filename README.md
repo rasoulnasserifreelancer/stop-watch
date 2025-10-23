@@ -1,73 +1,52 @@
-# React + TypeScript + Vite
+⏱️ React + TypeScript Stopwatch App
+A minimalist stopwatch built with React, TypeScript, and Vite. It features start, stop, and reset functionality — ideal for exploring component state, hooks, and responsive UI design.
+🚀 Tech Stack
+- React (with hooks)
+- TypeScript
+- Vite (lightning-fast dev server)
+- Tailwind CSS (utility-first styling)
+🧠 Core Concepts
+- useState for managing timer state and control flow
+- useRef to persist interval ID across renders
+- Clean separation of logic and presentation
+- Responsive layout with Tailwind
+📸 Screenshot
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Stopwatch UI](./assets/project-code.png)
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+📦 Installation
+git clone https://github.com/rasoulnasserifreelancer/stop-watch.git
+cd stop-watch
+npm install
+npm run dev
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+🧪 Features
+- ⏯️ Start / Stop toggle
+- 🔄 Reset timer
+- 📱 Responsive design
+- 🧼 Clean codebase with reusable hooks
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+🌐 Deploy on Vercel
+This app is Vercel-ready. To deploy:
+- Push your code to GitHub
+- Go to vercel.com
+- Import your repo
+- Set the framework to Vite
+- Hit Deploy
+Vercel will auto-detect the build command (vite build) and output directory (dist).
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🛠️ Scripts
+|  |  | 
+| npm run dev |  | 
+| npm run build |  | 
+| npm run preview |  | 
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+📄 License
+MIT — feel free to fork, remix, and learn!
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
