@@ -5,11 +5,13 @@ A minimalist stopwatch built with React, TypeScript, and Vite. It features start
 - TypeScript
 - Vite (lightning-fast dev server)
 - Tailwind CSS (utility-first styling)
+- 
 🧠 Core Concepts
 - useState for managing timer state and control flow
 - useRef to persist interval ID across renders
 - Clean separation of logic and presentation
 - Responsive layout with Tailwind
+- 
 📸 Screenshot
 
 ![Stopwatch UI](./src/assets/project-code.png)
