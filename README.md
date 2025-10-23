@@ -12,14 +12,18 @@ A minimalist stopwatch built with React, TypeScript, and Vite. It features start
 - Responsive layout with Tailwind
 📸 Screenshot
 
-![Stopwatch UI](./assets/project-code.png)
+![Stopwatch UI](./src/assets/project-code.png)
 
 
 
 📦 Installation
+
 git clone https://github.com/rasoulnasserifreelancer/stop-watch.git
+
 cd stop-watch
+
 npm install
+
 npm run dev
 
 
@@ -31,20 +35,17 @@ npm run dev
 
 
 
-🌐 Deploy on Vercel
-This app is Vercel-ready. To deploy:
-- Push your code to GitHub
-- Go to vercel.com
-- Import your repo
-- Set the framework to Vite
-- Hit Deploy
-Vercel will auto-detect the build command (vite build) and output directory (dist).
+🌐 Demo on Vercel
+
+[stop-watch](https://stop-watch-five-xi.vercel.app/)
 
 🛠️ Scripts
-|  |  | 
-| npm run dev |  | 
-| npm run build |  | 
-| npm run preview |  | 
+
+| npm run dev |
+
+| npm run build |  
+
+| npm run preview |   
 
 
 📄 License
